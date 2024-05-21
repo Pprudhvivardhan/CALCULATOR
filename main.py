@@ -1,5 +1,6 @@
 from logic import do_addition, do_substraction, do_division
 from multiply import do_multiplication
+from area_of_rectangle import area_of_rectangle
 
 def main():
     print('Welcome to Calculator app')
@@ -8,7 +9,7 @@ def main():
         1. add
         2. sub
         3. multiplication 
-        4.division
+        4. Area
         ''')
     user_input = input('select the function: ')
     
@@ -22,7 +23,7 @@ def main():
     elif user_input == '3':
         result = do_multiplication(a,b)
     elif user_input == '4':
-        result = do_division(a,b)
+        result = area_of_rectangle(a,b)
         
     print('Result:',result)
     
