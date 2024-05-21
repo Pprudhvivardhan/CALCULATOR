@@ -9,7 +9,7 @@ def main():
         1. add
         2. sub
         3. multiplication 
-        4. Area
+        4. division
         ''')
     user_input = input('select the function: ')
     
@@ -23,7 +23,7 @@ def main():
     elif user_input == '3':
         result = do_multiplication(a,b)
     elif user_input == '4':
-        result = area_of_rectangle(a,b)
+        result = do_division(a,b)
         
     print('Result:',result)
     
